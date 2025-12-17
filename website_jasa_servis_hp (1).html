@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-TECH | Jasa Servis & Jual HP</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+        }
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #084298;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .service {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        button {
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        footer {
+            background: #212529;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>D-TECH</h1>
+    <p>Jasa Servis HP & Penjualan Android TV Box</p>
+</header>
+
+<nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>D-TECH melayani servis handphone berbagai merek, ganti LCD, baterai, software, serta penjualan Android TV Box dengan harga terjangkau dan kualitas terpercaya.</p>
+    </div>
+
+    <div class="card" id="layanan">
+        <h2>Layanan & Estimasi Harga</h2>
+        <div class="services">
+            <div class="service">Ganti LCD<br>Mulai Rp150.000</div>
+            <div class="service">Ganti Baterai<br>Mulai Rp100.000</div>
+            <div class="service">Servis Mesin<br>Mulai Rp80.000</div>
+            <div class="service">Install Ulang / Software<br>Rp50.000</div>
+            <div class="service">Jual Android TV Box<br>Mulai Rp250.000</div>
+        </div>
+    </div>
+
+    <div class="card" id="harga">
+        <h2>Hitung Estimasi Biaya Servis</h2>
+        <p>Pilih jenis servis:</p>
+        <select id="jenisServis">
+            <option value="0">-- Pilih Servis --</option>
+            <option value="150000">Ganti LCD</option>
+            <option value="100000">Ganti Baterai</option>
+            <option value="80000">Servis Mesin</option>
+            <option value="50000">Install Ulang / Software</option>
+        </select>
+        <br><br>
+        <button onclick="hitungHarga()">Hitung Biaya</button>
+        <h3 id="hasil"></h3>
+    </div>
+
+    <div class="card" id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>Klik tombol di bawah untuk langsung chat WhatsApp</p>
+        <button onclick="chatWA()">Chat WhatsApp</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 D-TECH | Servis HP Profesional</p>
+</footer>
+
+<script>
+    function hitungHarga() {
+        let harga = document.getElementById("jenisServis").value;
+        if (harga == 0) {
+            document.getElementById("hasil").innerHTML = "Silakan pilih jenis servis";
+        } else {
+            document.getElementById("hasil").innerHTML = "Estimasi biaya: Rp" + Number(harga).toLocaleString("id-ID");
+        }
+    }
+
+    function chatWA() {
+        window.open("https://wa.me/6285263841766", "_blank");
+    }
+</script>
+
+</body>
+</html>

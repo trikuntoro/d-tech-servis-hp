@@ -1,200 +1,195 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D-TECH | Jasa Servis & Jual HP</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #fffbea;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #f5b700, #ffd84d);
-            color: #111;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .logo {
-            max-width: 180px;
-            margin-bottom: 10px;
-            background: #000;
-            padding: 10px;
-            border-radius: 12px;
-            box-shadow: 0 0 0 4px #000;
-        }
-        nav {
-            background: #f5b700;
-            padding: 12px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .service {
-            border: 1px solid #f5b700;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .service:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-        }
-        button {
-            background: #25d366;
-            color: white;
-            border: none;
-            padding: 14px 18px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 17px;
-            width: 100%;
-        }
-        button:hover {
-            opacity: 0.9;
-        }
-        footer {
-            background: #111;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D-TECH | Android TV Box </title>
+  <style>
+    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { margin: 0; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #f1f1f1; }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 40px;
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      color: #fff;
+    }
+    .logo { font-size: 26px; font-weight: bold; color: #ffffff; }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .btn-red {
+      background: #000;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      background: linear-gradient(90deg, #141e30, #243b55);
+      padding: 20px 40px;
+      color: #fff;
+    }
+    .breadcrumb h1 { margin: 0; font-size: 28px; }
+    .breadcrumb small { color: #f5f5f5; }
+
+    /* Layout */
+    .container {
+      display: flex;
+      padding: 30px 40px;
+      gap: 30px;
+      background: #ffffff;
+      color: #333;
+      border-radius: 16px;
+      margin: 30px;
+    }
+    aside {
+      width: 260px;
+    }
+    main {
+      flex: 1;
+      text-align: center;
+      color: #777;
+    }
+
+    /* Filter */
+    .search-box input {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+    .filter {
+      margin-bottom: 20px;
+    }
+    .filter h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .filter label {
+      display: block;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    /* Chat button */
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo D-TECH" class="logo">
-    <h1>D-TECH</h1>
-    <p>Solusi Cepat • Harga Bersahabat • Teknisi Berpengalaman</p>
+  <div class="logo">D-TECH</div>
+  <nav>
+    <a href="#">AV</a>
+    <a href="#">TV</a>
+    <a href="#">Audio</a>
+    <a href="#">LED</a>
+    <a href="#">TV TABUNG</a>
+  </nav>
+  <div class="header-right">
+    <a href="#">Service</a>
+    <a href="#">e-Catalog</a>
+    <a href="#">Business</a>
+    <a href="#">Login</a>
+    <a class="btn-red" href="#">Lihat Toko</a>
+  </div>
 </header>
 
-<nav>
-    <a href="#tentang">Tentang</a>
-    <a href="#layanan">Layanan</a>
-    <a href="#kontak">Kontak</a>
-</nav>
+<section class="breadcrumb">
+  <h1>Android TV Box</h1>
+  <small>Home / TV / Smart TV / Android TV Box</small>
+</section>
 
 <div class="container">
-
-    <div class="card" id="tentang">
-        <h2>Tentang Kami</h2>
-        <p>D-TECH melayani servis handphone berbagai merek, ganti LCD, baterai, software, serta penjualan Android TV Box dengan harga terjangkau dan kualitas terpercaya.</p>
+  <aside>
+    <div class="search-box">
+      <input type="text" placeholder="Search" />
     </div>
 
-    <div class="card" id="layanan">
-        <h2>Layanan & Estimasi Harga</h2>
-        <div class="services">
-            <div class="service">Ganti LCD<br>Mulai Rp3.000</div>
-            <div class="service">Ganti Baterai<br>Mulai Rp100.000</div>
-            <div class="service">Servis Mesin<br>Mulai Rp80.000</div>
-            <div class="service">Install Ulang / Software<br>Rp50.000</div>
-            <div class="service">Jual Android TV Box<br>Mulai Rp250.000</div>
-        </div>
+    <div class="filter">
+      <h3>Resolusi</h3>
+      <label><input type="checkbox" /> 4K Ultra HD</label>
+      <label><input type="checkbox" /> FHD/HD</label>
     </div>
 
-    <div class="card" id="harga">
-        <h2>Hitung Estimasi Biaya Servis</h2>
-        <p>Pilih jenis servis:</p>
-        <select id="jenisServis">
-            <option value="0">-- Pilih Servis --</option>
-            <option value="150000">Ganti LCD</option>
-            <option value="100000">Ganti Baterai</option>
-            <option value="80000">Servis Mesin</option>
-            <option value="50000">Install Ulang / Software</option>
-        </select>
-        <br><br>
-        <button onclick="hitungHarga()">Hitung Biaya</button>
-        <h3 id="hasil"></h3>
+    <div class="filter">
+      <h3>Fungsion</h3>
+      <label><input type="checkbox" /> Android TV</label>
+      <label><input type="checkbox" /> Smart TV</label>
     </div>
 
-    <div class="card" id="testimoni">
-        <h2>Testimoni Pelanggan</h2>
-        <div class="services">
-            <div class="service">
-                <img src="testi1.jpg" alt="Testimoni Andi" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px;">
-                ⭐⭐⭐⭐⭐<br><b>Andi</b><br>Servis cepat, HP normal kembali. Harga jujur!
-            </div>
-            <div class="service">
-                <img src="testi2.jpg" alt="Testimoni Siti" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px;">
-                ⭐⭐⭐⭐⭐<br><b>Siti</b><br>Android TV Box sangat canggih dan mudah dipakai.
-            </div>
-            <div class="service">
-                <img src="testi3.jpg" alt="Testimoni Budi" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px;">
-                ⭐⭐⭐⭐⭐<br><b>Budi</b><br>Anak jadi lebih sering nonton TV edukatif, mantap!
-            </div>
-        </div>
+    <div class="filter">
+      <h3>Type TV</h3>
+      <label><input type="checkbox" /> TV LED</label>
+      <label><input type="checkbox" /> TV TABUNG</label>
+      
     </div>
+  </aside>
 
-    <div class="card" id="kontak">
-        <h2>Hubungi Kami</h2>
-        <p>Klik tombol di bawah untuk langsung chat WhatsApp</p>
-        <button onclick="chatWA()">Chat WhatsApp</button>
-    </div>
+  <main>
+    <p>No products were found matching your selection.</p>
 
+    <section style="text-align:left; margin-top:40px;">
+      <h2>Fungsi 4K Smart Android TV Box</h2>
+      <h4>1. Memperluas Jangkauan Tayangan Hiburan</h4>
+      <p>Menggunakan Android box ini yang terkoneksi dengan jaringan internet dapat memperluas tayangan melalui aplikasi streaming, sehingga tidak lagi hanya menonton tayangan dari siaran channel konvensional saja.</p>
+
+      <h4>2. Browsing</h4>
+      <p>Televisi tidak sebatas untuk menonton saja, kamu juga sudah bisa browsing menggunakan TV layaknya <em>smartphone</em>.</p>
+
+      <h4>3. Bermain Game</h4>
+      <p>Bermain game kini tidak hanya bisa dilakukan di smartphone saja, kamu bisa memainkan game-game Android sepuasnya dari televisi dengan layar yang lebih besar.</p>
+
+      <h4>4. Screen Mirroring</h4>
+      <p>Dengan screen mirroring kamu bisa dengan mudah menampilkan konten dari layar HP ke TV untuk menikmati tontonan di layar yang lebih besar.</p>
+    </section>
+
+    <section style="text-align:left; margin-top:40px;">
+      <h2>Fungsi Set Top Box</h2>
+      <p>STB ini selain dapat menyiarkan tayangan digital juga telah dilengkapi teknologi EWS (Early Warning System) atau sistem peringatan dini bencana. Serta dilengkapi juga fitur PVR (Personal Video Recorder) untuk merekam acara TV favorit yang dapat disimpan ke dalam penyimpanan eksternal.</p>
+      <p>Jangan khawatir, kamu tidak perlu bingung untuk membeli STB yang aman dan terpercaya. D-TECH memiliki beberapa tipe STB yang telah bersertifikasi Kominfo.</p>
+    </section>
+
+    <section style="text-align:left; margin-top:40px;">
+      <h2>D-TECH hadirkan juga 4K Smart Android TV Box</h2>
+      <h4>Apa itu 4K Smart Android TV Box?</h4>
+      <p>4K Smart Android TV merupakan sebuah perangkat yang mengubah fungsi TV non smart menjadi smart TV yang berbasis Android. Dengan menggunakan 4K Smart Android TV Box, kamu dapat mengoperasionalkan aplikasi yang ada di TV berbasis Android. Tidak hanya itu saja, kamu juga bisa mendownload berbagai aplikasi lewat TV berbasis Android.</p>
+    </section>
+  </main>
 </div>
 
-<footer>
-    <p>© 2025 D-TECH | Servis HP Profesional</p>
-</footer>
-
-<script>
-    function hitungHarga() {
-        let harga = document.getElementById("jenisServis").value;
-        if (harga == 0) {
-            document.getElementById("hasil").innerHTML = "Silakan pilih jenis servis";
-        } else {
-            document.getElementById("hasil").innerHTML = "Estimasi biaya: Rp" + Number(harga).toLocaleString("id-ID");
-        }
-    }
-
-    function chatWA() {
-        window.open("https://wa.me/6285263841766", "_blank");
-    }
-</script>
-
-<a href="https://wa.me/6285263841766" class="wa-float">Chat WhatsApp</a>
-
-<style>
-.wa-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-</style>
+<div class="chat-btn">💬</div>
 
 </body>
 </html>

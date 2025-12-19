@@ -13,30 +13,39 @@ body{margin:0;background:#f4f6fb}
 header{
 background:linear-gradient(135deg,#8e2de2,#4a00e0);
 color:#fff;
-padding:15px 40px;
+padding:15px;
 display:flex;
-justify-content:space-between;
-align-items:center
+flex-direction:column;
+align-items:center;
+text-align:center
 }
-nav a{color:#fff;margin-left:20px;text-decoration:none;font-weight:bold}
+header h2{margin:0;font-size:24px}
+nav{margin-top:10px}
+nav a{
+color:#fff;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px
+}
 
 /* HERO */
 .hero{
 background:linear-gradient(135deg,#c471ed,#12c2e9);
-height:180px;
-border-bottom-left-radius:80px;
-border-bottom-right-radius:80px
+height:160px;
+border-bottom-left-radius:60px;
+border-bottom-right-radius:60px
 }
 
 /* CONTENT */
 .container{
-max-width:1200px;
-margin:-80px auto 40px;
-padding:20px
+max-width:1100px;
+margin:-70px auto 30px;
+padding:15px
 }
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:1fr;
 gap:20px
 }
 .card{
@@ -48,11 +57,26 @@ position:relative
 }
 .card img{
 width:100%;
-height:220px;
+height:200px;
 object-fit:contain;
-background:#fff;
-padding:10px
+padding:10px;
+background:#fff
 }
+
+/* BADGE */
+.badge{
+position:absolute;
+top:10px;
+left:10px;
+background:#ff3d00;
+color:#fff;
+padding:5px 10px;
+font-size:12px;
+font-weight:bold;
+border-radius:6px;
+z-index:2
+}
+
 .content{padding:15px}
 .tag{
 display:inline-block;
@@ -61,38 +85,51 @@ color:#fff;
 padding:4px 10px;
 border-radius:6px;
 font-size:12px;
-margin-bottom:6px
+margin-bottom:8px
 }
-.badge{
-position:absolute;
-top:12px;
-left:12px;
-background:#ff3d00;
-color:#fff;
-padding:6px 10px;
-font-size:12px;
-font-weight:bold;
-border-radius:6px
-}
+h3{margin:8px 0;font-size:18px}
+
+/* PRICE */
 .price{margin:10px 0}
-.old-price{text-decoration:line-through;color:#999;font-size:14px}
-.new-price{font-size:20px;font-weight:bold;color:#e53935}
-.btn{
-display:block;
-margin-top:15px;
-background:#25d366;
-color:#fff;
-padding:12px;
-border-radius:10px;
-text-align:center;
-text-decoration:none;
-font-weight:bold
-}
+.old-price{color:#999;text-decoration:line-through;font-size:14px}
+.new-price{font-size:22px;font-weight:bold;color:#e53935}
+
+/* DETAIL */
 details summary{
 cursor:pointer;
 font-weight:bold;
 margin-top:10px
 }
+details p{font-size:14px;line-height:1.6}
+
+/* BUTTON */
+.btn{
+display:block;
+margin-top:15px;
+background:#25d366;
+color:#fff;
+padding:14px;
+border-radius:12px;
+text-align:center;
+text-decoration:none;
+font-weight:bold;
+font-size:16px
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+header{
+flex-direction:row;
+justify-content:space-between;
+text-align:left
+}
+nav{margin-top:0}
+.grid{
+grid-template-columns:repeat(3,1fr)
+}
+.card img{height:220px}
+}
+
 footer{
 background:#1f1f1f;
 color:#aaa;
@@ -153,15 +190,9 @@ font-size:14px
 
 <strong>Keunggulan:</strong><br>
 • TV lokal, YouTube, film bioskop<br>
-• Decoding 1080p Full HD<br>
 • Support semua format video & audio<br>
 • WiFi 2.4G<br>
 • Mouse & keyboard USB / wireless<br><br>
-
-<strong>Koneksi Internet:</strong><br>
-• WiFi rumah<br>
-• Hotspot HP<br>
-• LAN kabel<br><br>
 
 <strong>Catatan:</strong><br>
 • Bluetooth tidak didukung<br>
@@ -169,9 +200,7 @@ font-size:14px
 </p>
 </details>
 
-<a class="btn" href="https://wa.me/6285263841766" target="_blank">
-Order via WhatsApp
-</a>
+<a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
 </div>
 </div>
 
@@ -192,45 +221,16 @@ Order via WhatsApp
 <details>
 <summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-<strong>Konfigurasi:</strong><br>
-• Memori 4GB + 128GB<br>
+• RAM 4GB + ROM 128GB<br>
 • Resolusi 4K<br>
-• Chipset Amlogic 905L2<br>
 • Android 9<br>
-• Proyeksi layar ponsel<br>
-• Garansi 3 bulan<br><br>
-
-<strong>Paket Pembelian:</strong><br>
-• Unit Android TV Box<br>
-• Kabel HDMI & RCA<br>
-• Power supply<br>
-• Remote Google Voice<br>
-• Buku manual<br><br>
-
-<strong>Keunggulan:</strong><br>
-• TV lokal lengkap + YouTube<br>
-• Siaran bola live tanpa sensor<br>
-• Bluetooth karaoke<br>
+• Bluetooth 5.0<br>
 • Google Voice<br>
-• Decoding 1080p Full HD<br>
-• Support semua format<br>
-• WiFi 2.4G<br>
-• Mouse & keyboard USB / wireless<br><br>
-
-<strong>Koneksi Internet:</strong><br>
-• WiFi rumah<br>
-• Hotspot HP<br>
-• LAN kabel<br><br>
-
-<strong>Kompatibilitas:</strong><br>
-• TV LED, TV Tabung, Monitor<br>
-• Bluetooth 5.0
+• Karaoke & bola live
 </p>
 </details>
 
-<a class="btn" href="https://wa.me/6285263841766" target="_blank">
-Order via WhatsApp
-</a>
+<a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
 </div>
 </div>
 
@@ -241,15 +241,12 @@ Order via WhatsApp
 <div class="content">
 <span class="tag">AKSESORIS</span>
 <h3>Remote & Adapter</h3>
-<p>Remote pengganti dan adaptor original Android TV Box D-TECH.</p>
 
 <div class="price">
 <div class="new-price">Mulai Rp 75.000</div>
 </div>
 
-<a class="btn" href="https://wa.me/6285263841766" target="_blank">
-Order via WhatsApp
-</a>
+<a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
 </div>
 </div>
 

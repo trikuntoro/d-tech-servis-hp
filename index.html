@@ -3,193 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D-TECH | Android TV Box </title>
+  <title>D-TECH | Android TV Box</title>
   <style>
     * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
-    body { margin: 0; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #f1f1f1; }
+    body { margin: 0; background: #f4f6fb; }
 
-    /* Header */
+    /* HEADER */
     header {
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+      color: white;
+      padding: 15px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 40px;
-      background: linear-gradient(90deg, #ff512f, #dd2476);
-      color: #fff;
     }
-    .logo { font-size: 26px; font-weight: bold; color: #ffffff; }
+    header h1 { margin: 0; font-size: 26px; }
     nav a {
-      margin: 0 10px;
+      color: white;
+      margin-left: 20px;
       text-decoration: none;
-      color: #fff;
-      font-weight: 500;
+      font-weight: bold;
     }
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .btn-red {
-      background: #000;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 14px;
-      text-decoration: none;
+    nav a:hover { text-decoration: underline; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #c471ed, #12c2e9);
+      height: 180px;
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 80px;
     }
 
-    /* Breadcrumb */
-    .breadcrumb {
-      background: linear-gradient(90deg, #141e30, #243b55);
-      padding: 20px 40px;
-      color: #fff;
-    }
-    .breadcrumb h1 { margin: 0; font-size: 28px; }
-    .breadcrumb small { color: #f5f5f5; }
-
-    /* Layout */
+    /* CONTENT */
     .container {
-      display: flex;
-      padding: 30px 40px;
-      gap: 30px;
-      background: #ffffff;
-      color: #333;
-      border-radius: 16px;
-      margin: 30px;
-    }
-    aside {
-      width: 260px;
-    }
-    main {
-      flex: 1;
-      text-align: center;
-      color: #777;
+      max-width: 1200px;
+      margin: -80px auto 40px;
+      padding: 20px;
     }
 
-    /* Filter */
-    .search-box input {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
       width: 100%;
-      padding: 10px 14px;
-      border-radius: 20px;
-      border: 1px solid #ddd;
-      margin-bottom: 20px;
+      height: 180px;
+      object-fit: cover;
     }
-    .filter {
-      margin-bottom: 20px;
+
+    .card .content {
+      padding: 15px;
     }
-    .filter h3 {
-      font-size: 16px;
+
+    .tag {
+      display: inline-block;
+      background: #4a00e0;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
       margin-bottom: 8px;
     }
-    .filter label {
-      display: block;
-      font-size: 14px;
-      margin: 6px 0;
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
     }
 
-    /* Chat button */
-    .chat-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: linear-gradient(135deg, #ff512f, #dd2476);
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 22px;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #25d366;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1f1f1f;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 10px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">D-TECH</div>
+  <h1>D-TECH</h1>
   <nav>
-    <a href="#">AV</a>
-    <a href="#">TV</a>
-    <a href="#">Audio</a>
-    <a href="#">LED</a>
-    <a href="#">TV TABUNG</a>
+    <a href="#">Home</a>
+    <a href="#produk">Produk</a>
+    <a href="#kontak">Kontak</a>
   </nav>
-  <div class="header-right">
-    <a href="#">Service</a>
-    <a href="#">e-Catalog</a>
-    <a href="#">Business</a>
-    <a href="#">Login</a>
-    <a class="btn-red" href="#">Lihat Toko</a>
-  </div>
 </header>
 
-<section class="breadcrumb">
-  <h1>Android TV Box</h1>
-  <small>Home / TV / Smart TV / Android TV Box</small>
-</section>
+<div class="hero"></div>
 
 <div class="container">
-  <aside>
-    <div class="search-box">
-      <input type="text" placeholder="Search" />
+  <div class="grid">
+
+    <div class="card">
+      <img src="ChatGPT Image 19 Des 2025, 09.03.29.png" />
+      <div class="content">
+        <span class="tag">Android TV Box</span>
+        <h3>D-TECH RAM 4GB</h3>
+        <p>Android TV Box D-TECH, cepat, stabil, cocok untuk YouTube, Netflix & IPTV.</p>
+        <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
+      </div>
     </div>
 
-    <div class="filter">
-      <h3>Resolusi</h3>
-      <label><input type="checkbox" /> 4K Ultra HD</label>
-      <label><input type="checkbox" /> FHD/HD</label>
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400?text=Smart+TV+Solution" />
+      <div class="content">
+        <span class="tag">Smart TV</span>
+        <h3>D-TECH Full HD</h3>
+        <p>Ubah TV biasa jadi Smart TV, mendukung Play Store & remote learning.</p>
+        <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
+      </div>
     </div>
 
-    <div class="filter">
-      <h3>Fungsion</h3>
-      <label><input type="checkbox" /> Android TV</label>
-      <label><input type="checkbox" /> Smart TV</label>
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400?text=Aksesoris" />
+      <div class="content">
+        <span class="tag">Aksesoris</span>
+        <h3>Remote & Adapter</h3>
+        <p>Remote pengganti, adaptor original, dan aksesoris Android TV Box.</p>
+        <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
+      </div>
     </div>
 
-    <div class="filter">
-      <h3>Type TV</h3>
-      <label><input type="checkbox" /> TV LED</label>
-      <label><input type="checkbox" /> TV TABUNG</label>
-      
-    </div>
-  </aside>
-
-  <main>
-    <p>No products were found matching your selection.</p>
-
-    <section style="text-align:left; margin-top:40px;">
-      <h2>Fungsi 4K Smart Android TV Box</h2>
-      <h4>1. Memperluas Jangkauan Tayangan Hiburan</h4>
-      <p>Menggunakan Android box ini yang terkoneksi dengan jaringan internet dapat memperluas tayangan melalui aplikasi streaming, sehingga tidak lagi hanya menonton tayangan dari siaran channel konvensional saja.</p>
-
-      <h4>2. Browsing</h4>
-      <p>Televisi tidak sebatas untuk menonton saja, kamu juga sudah bisa browsing menggunakan TV layaknya <em>smartphone</em>.</p>
-
-      <h4>3. Bermain Game</h4>
-      <p>Bermain game kini tidak hanya bisa dilakukan di smartphone saja, kamu bisa memainkan game-game Android sepuasnya dari televisi dengan layar yang lebih besar.</p>
-
-      <h4>4. Screen Mirroring</h4>
-      <p>Dengan screen mirroring kamu bisa dengan mudah menampilkan konten dari layar HP ke TV untuk menikmati tontonan di layar yang lebih besar.</p>
-    </section>
-
-    <section style="text-align:left; margin-top:40px;">
-      <h2>Fungsi Set Top Box</h2>
-      <p>STB ini selain dapat menyiarkan tayangan digital juga telah dilengkapi teknologi EWS (Early Warning System) atau sistem peringatan dini bencana. Serta dilengkapi juga fitur PVR (Personal Video Recorder) untuk merekam acara TV favorit yang dapat disimpan ke dalam penyimpanan eksternal.</p>
-      <p>Jangan khawatir, kamu tidak perlu bingung untuk membeli STB yang aman dan terpercaya. D-TECH memiliki beberapa tipe STB yang telah bersertifikasi Kominfo.</p>
-    </section>
-
-    <section style="text-align:left; margin-top:40px;">
-      <h2>D-TECH hadirkan juga 4K Smart Android TV Box</h2>
-      <h4>Apa itu 4K Smart Android TV Box?</h4>
-      <p>4K Smart Android TV merupakan sebuah perangkat yang mengubah fungsi TV non smart menjadi smart TV yang berbasis Android. Dengan menggunakan 4K Smart Android TV Box, kamu dapat mengoperasionalkan aplikasi yang ada di TV berbasis Android. Tidak hanya itu saja, kamu juga bisa mendownload berbagai aplikasi lewat TV berbasis Android.</p>
-    </section>
-  </main>
+  </div>
 </div>
 
-<div class="chat-btn">💬</div>
+<footer id="kontak">
+  <p>© 2025 D-TECH Android TV Box</p>
+  <p>WhatsApp: 0852-6384-1766</p>
+</footer>
 
 </body>
 </html>

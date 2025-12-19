@@ -22,7 +22,7 @@ header h2{margin:0;font-size:24px}
 nav{margin-top:8px}
 nav a{
 color:#fff;
-margin:0 12px;
+margin:0 10px;
 text-decoration:none;
 font-weight:bold;
 font-size:14px
@@ -116,11 +116,32 @@ font-weight:bold;
 font-size:16px
 }
 
+/* GALERI */
+.galeri{
+margin-top:30px
+}
+.galeri h2{
+text-align:center;
+margin-bottom:15px
+}
+.galeri-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px
+}
+.galeri-grid img{
+width:100%;
+border-radius:12px;
+object-fit:cover;
+height:160px
+}
+
 /* DESKTOP */
 @media(min-width:768px){
 header{flex-direction:row;justify-content:space-between}
 nav{margin-top:0}
 .grid{grid-template-columns:repeat(3,1fr)}
+.galeri-grid{grid-template-columns:repeat(4,1fr)}
 }
 
 footer{
@@ -140,12 +161,14 @@ font-size:14px
 <nav>
 <a href="#">Home</a>
 <a href="#produk">Produk</a>
+<a href="#galeri">Galeri Pembeli</a>
 <a href="#kontak">Kontak</a>
 </nav>
 </header>
 
 <div class="hero"></div>
 
+<!-- PRODUK -->
 <div class="container" id="produk">
 <div class="grid">
 
@@ -162,34 +185,14 @@ font-size:14px
 <div class="new-price">Rp 380.000</div>
 </div>
 
-<details open>
+<details>
 <summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-<strong>Konfigurasi:</strong><br>
-• RAM 4GB + ROM 64GB<br>
-• Resolusi 1080P Full HD<br>
-• Chipset Amlogic 905L2<br>
-• Android 14<br>
-• Screen mirroring HP<br>
-• Garansi 3 bulan<br><br>
-
-<strong>Paket Pembelian:</strong><br>
-• Unit Android TV Box D-TECH<br>
-• Kabel HDMI & RCA<br>
-• Power supply<br>
-• Remote control standar<br>
-• Buku manual<br><br>
-
-<strong>Keunggulan:</strong><br>
-• Siaran TV lokal lengkap + YouTube + film bioskop<br>
-• Support semua format video & audio<br>
-• Decoding video hingga 1080P<br>
-• WiFi 2.4G<br>
-• Support mouse & keyboard USB / wireless<br><br>
-
-<strong>Kompatibilitas:</strong><br>
-• TV LED, TV Tabung, Monitor 1080P<br>
-• Tidak support remote voice
+RAM 4GB + ROM 64GB<br>
+Android 14<br>
+Resolusi 1080P Full HD<br>
+TV lokal + YouTube + film bioskop<br>
+Support mouse & keyboard
 </p>
 </details>
 
@@ -201,7 +204,6 @@ font-size:14px
 <div class="card">
 <span class="badge">BEST SELLER</span>
 <img src="dtech-tvbox-2.png">
-
 <div class="content">
 <span class="tag">PRO 4K</span>
 <h3>D-TECH PRO 4K</h3>
@@ -211,35 +213,14 @@ font-size:14px
 <div class="new-price">Rp 550.000</div>
 </div>
 
-<details open>
+<details>
 <summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-<strong>Konfigurasi:</strong><br>
-• RAM 4GB + ROM 128GB<br>
-• Resolusi 4K Ultra HD<br>
-• Chipset Amlogic 905L2<br>
-• Android 9<br>
-• Screen mirroring HP<br>
-• Garansi 3 bulan<br><br>
-
-<strong>Paket Pembelian:</strong><br>
-• Unit Android TV Box D-TECH<br>
-• Kabel HDMI & RCA<br>
-• Power supply<br>
-• Remote Google Voice<br>
-• Buku manual<br><br>
-
-<strong>Keunggulan:</strong><br>
-• Siaran TV lokal + YouTube + film bioskop<br>
-• Siaran bola live tanpa sensor<br>
-• Tersedia bluetooth yang bisa di sambung spiker aktif<br>
-• Google Voice control<br>
-• Support mouse & keyboard<br><br>
-
-<strong>Koneksi:</strong><br>
-• WiFi rumah<br>
-• Hotspot HP<br>
-• LAN kabel
+RAM 4GB + ROM 128GB<br>
+Resolusi 4K<br>
+Bluetooth 5.0<br>
+Google Voice<br>
+Karaoke & bola live
 </p>
 </details>
 
@@ -247,6 +228,17 @@ font-size:14px
 </div>
 </div>
 
+</div>
+</div>
+
+<!-- GALERI PEMBELI -->
+<div class="container galeri" id="galeri">
+<h2>Galeri Pembeli</h2>
+<div class="galeri-grid">
+<img src="galeri1.jpg">
+<img src="galeri2.jpg">
+<img src="galeri3.jpg">
+<img src="galeri4.jpg">
 </div>
 </div>
 

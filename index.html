@@ -1,138 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D-TECH | Android TV Box</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D-TECH | Android TV Box</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;background:#f4f6fb}
 
-    body {
-      margin: 0;
-      background: #f4f6fb;
-    }
+header{
+  background:linear-gradient(135deg,#8e2de2,#4a00e0);
+  color:#fff;padding:15px 40px;
+  display:flex;justify-content:space-between;align-items:center
+}
+header h1{margin:0;font-size:26px}
+nav a{color:#fff;margin-left:20px;text-decoration:none;font-weight:bold}
 
-    header {
-      background: linear-gradient(135deg, #8e2de2, #4a00e0);
-      color: white;
-      padding: 15px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.hero{
+  background:linear-gradient(135deg,#c471ed,#12c2e9);
+  height:180px;border-radius:0 0 80px 80px
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
+.container{max-width:1200px;margin:-80px auto 40px;padding:20px}
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+.card{
+  background:#fff;border-radius:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.1);
+  overflow:hidden;position:relative
+}
 
-    .hero {
-      background: linear-gradient(135deg, #c471ed, #12c2e9);
-      height: 180px;
-      border-bottom-left-radius: 80px;
-      border-bottom-right-radius: 80px;
-    }
+.badge{
+  position:absolute;top:12px;left:12px;
+  background:#e63946;color:#fff;
+  padding:6px 12px;border-radius:20px;
+  font-size:12px;font-weight:bold
+}
 
-    .container {
-      max-width: 1200px;
-      margin: -80px auto 40px;
-      padding: 20px;
-    }
+.card img{
+  width:100%;height:180px;
+  object-fit:contain;padding:10px
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+.content{padding:15px}
 
-    .card {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
+.tag{
+  display:inline-block;background:#4a00e0;
+  color:#fff;padding:4px 10px;
+  border-radius:6px;font-size:12px
+}
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: contain;
-      background: #fff;
-      padding: 10px;
-    }
+.price{
+  margin:10px 0
+}
+.old-price{
+  text-decoration:line-through;
+  color:#999;font-size:14px
+}
+.new-price{
+  color:#e63946;
+  font-size:20px;font-weight:bold
+}
 
-    .content {
-      padding: 15px;
-      flex: 1;
-    }
+p{font-size:14px;color:#555;line-height:1.6}
 
-    .tag {
-      display: inline-block;
-      background: #4a00e0;
-      color: white;
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-size: 12px;
-      margin-bottom: 8px;
-    }
+.btn{
+  display:block;margin-top:12px;
+  background:#25d366;color:#fff;
+  padding:12px;border-radius:8px;
+  text-decoration:none;font-weight:bold;
+  text-align:center
+}
 
-    h3 {
-      margin: 10px 0;
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: block;
-      margin-top: 12px;
-      background: #25d366;
-      color: white;
-      padding: 12px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    footer {
-      background: #1f1f1f;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
-      }
-      nav a {
-        margin: 0 10px;
-      }
-    }
-  </style>
+footer{
+  background:#1f1f1f;color:#aaa;
+  text-align:center;padding:20px;font-size:14px
+}
+</style>
 </head>
 
 <body>
@@ -149,103 +99,88 @@
 <div class="hero"></div>
 
 <div class="container" id="produk">
-  <div class="grid">
+<div class="grid">
 
-    <!-- PRODUK 1 -->
-    <div class="card">
-      <img src="dtech-tvbox.png" alt="D-TECH BASIC FULL HD">
-      <div class="content">
-        <span class="tag">Android TV Box</span>
-        <h3>D-TECH BASIC FULL HD</h3>
-        <p>
-<strong>Konfigurasi:</strong><br>
-• Memori 4GB + 64GB<br>
-• Resolusi 1080P Full HD<br>
-• Chipset Amlogic 905L2<br>
+<!-- PRODUK 1 -->
+<div class="card">
+<span class="badge">PROMO</span>
+<img src="dtech-tvbox.png">
+<div class="content">
+<span class="tag">FULL HD</span>
+<h3>D-TECH BASIC FULL HD</h3>
+
+<div class="price">
+  <div class="old-price">Rp 650.000</div>
+  <div class="new-price">Rp 499.000</div>
+</div>
+
+<p>
+• RAM 4GB + ROM 64GB<br>
 • Android 14<br>
-• Proyeksi layar ponsel<br>
-• Garansi 3 bulan<br><br>
+• Resolusi 1080P Full HD<br>
+• TV lokal + YouTube + Film<br>
+• Garansi 3 bulan
+</p>
 
-<strong>Paket Pembelian:</strong><br>
-• Unit TV Box<br>
-• Kabel HDMI & RCA<br>
-• Power supply<br>
-• Remote control<br>
-• Buku manual<br><br>
+<a class="btn" href="https://wa.me/6285263841766" target="_blank">
+Order via WhatsApp
+</a>
+</div>
+</div>
 
-<strong>Keunggulan:</strong><br>
-• TV lokal, YouTube, film & olahraga live<br>
-• Decoding 1080P Full HD<br>
-• Support semua format video & audio<br>
-• WiFi 2.4G<br>
-• Mouse & keyboard USB / wireless<br><br>
+<!-- PRODUK 2 -->
+<div class="card">
+<span class="badge">BEST SELLER</span>
+<img src="dtech-tvbox-2.png">
+<div class="content">
+<span class="tag">PRO 4K</span>
+<h3>D-TECH PRO 4K</h3>
 
-<strong>Kompatibilitas:</strong><br>
-• TV LED, TV Tabung, Monitor 1080P<br>
-• Bluetooth tidak didukung<br>
-• Remote tanpa voice
-        </p>
-        <a class="btn" href="https://wa.me/6285263841766" target="_blank">Order via WhatsApp</a>
-      </div>
-    </div>
+<div class="price">
+  <div class="old-price">Rp 1.150.000</div>
+  <div class="new-price">Rp 899.000</div>
+</div>
 
-    <!-- PRODUK 2 -->
-    <div class="card">
-      <img src="dtech-tvbox-2.png" alt="D-TECH PRO 4K">
-      <div class="content">
-        <span class="tag">PRO 4K</span>
-        <h3>D-TECH PRO 4K</h3>
-        <p>
-<strong>Konfigurasi:</strong><br>
-• Memori 4GB + 128GB<br>
+<p>
+• RAM 4GB + ROM 128GB<br>
 • Resolusi 4K<br>
-• Chipset Amlogic 905L2<br>
-• Android 9<br>
-• Screen mirroring<br>
-• Garansi 3 bulan<br><br>
+• Bluetooth + Google Voice<br>
+• Karaoke & bola live<br>
+• Garansi 3 bulan
+</p>
 
-<strong>Paket Pembelian:</strong><br>
-• Unit TV Box<br>
-• Kabel HDMI & RCA<br>
-• Power supply<br>
-• Remote Google Voice<br>
-• Buku manual<br><br>
+<a class="btn" href="https://wa.me/6285263841766" target="_blank">
+Order via WhatsApp
+</a>
+</div>
+</div>
 
-<strong>Keunggulan:</strong><br>
-• TV lokal, YouTube, film bioskop<br>
-• Siaran bola live tanpa sensor<br>
-• Bluetooth (karaoke speaker aktif)<br>
-• Google Voice Control<br>
-• Decoding 1080P Full HD<br>
-• Support semua format<br>
-• WiFi 2.4G<br>
-• Mouse & keyboard USB / wireless<br><br>
+<!-- PRODUK 3 -->
+<div class="card">
+<span class="badge">READY</span>
+<img src="remote-dtech.png">
+<div class="content">
+<span class="tag">AKSESORIS</span>
+<h3>Remote & Adapter D-TECH</h3>
 
-<strong>Kompatibilitas:</strong><br>
-• TV LED, TV Tabung, Monitor 1080P<br>
-• Bluetooth 5.0
-        </p>
-        <a class="btn" href="https://wa.me/6285263841766" target="_blank">Order via WhatsApp</a>
-      </div>
-    </div>
+<div class="price">
+  <div class="new-price">Mulai Rp 50.000</div>
+</div>
 
-    <!-- PRODUK 3 -->
-    <div class="card">
-      <img src="remote-dtech.png" alt="Remote D-TECH">
-      <div class="content">
-        <span class="tag">Aksesoris</span>
-        <h3>Remote & Adapter</h3>
-        <p>Remote pengganti, adaptor original, dan aksesoris Android TV Box D-TECH.</p>
-        <a class="btn" href="https://wa.me/6285263841766" target="_blank">Order via WhatsApp</a>
-      </div>
-    </div>
+<p>Remote pengganti & adaptor original Android TV Box D-TECH.</p>
 
-  </div>
+<a class="btn" href="https://wa.me/6285263841766" target="_blank">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+</div>
 </div>
 
 <footer id="kontak">
-  <p>© 2025 D-TECH Android TV Box</p>
-  <p>WhatsApp: 0852-6384-1766</p>
+<p>© 2025 D-TECH Android TV Box</p>
+<p>WhatsApp: 0852-6384-1766</p>
 </footer>
 
 </body>

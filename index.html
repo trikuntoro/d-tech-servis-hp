@@ -9,78 +9,96 @@
 *{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 body{margin:0;background:#f4f6fb}
 
+/* HEADER */
 header{
-  background:linear-gradient(135deg,#8e2de2,#4a00e0);
-  color:#fff;padding:15px 40px;
-  display:flex;justify-content:space-between;align-items:center
+background:linear-gradient(135deg,#8e2de2,#4a00e0);
+color:#fff;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center
 }
-header h1{margin:0;font-size:26px}
 nav a{color:#fff;margin-left:20px;text-decoration:none;font-weight:bold}
 
+/* HERO */
 .hero{
-  background:linear-gradient(135deg,#c471ed,#12c2e9);
-  height:180px;border-radius:0 0 80px 80px
+background:linear-gradient(135deg,#c471ed,#12c2e9);
+height:180px;
+border-bottom-left-radius:80px;
+border-bottom-right-radius:80px
 }
 
-.container{max-width:1200px;margin:-80px auto 40px;padding:20px}
-
+/* CONTENT */
+.container{
+max-width:1200px;
+margin:-80px auto 40px;
+padding:20px
+}
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px
 }
-
 .card{
-  background:#fff;border-radius:14px;
-  box-shadow:0 6px 15px rgba(0,0,0,.1);
-  overflow:hidden;position:relative
+background:#fff;
+border-radius:16px;
+box-shadow:0 6px 15px rgba(0,0,0,.1);
+overflow:hidden;
+position:relative
 }
-
-.badge{
-  position:absolute;top:12px;left:12px;
-  background:#e63946;color:#fff;
-  padding:6px 12px;border-radius:20px;
-  font-size:12px;font-weight:bold
-}
-
 .card img{
-  width:100%;height:180px;
-  object-fit:contain;padding:10px
+width:100%;
+height:220px;
+object-fit:contain;
+background:#fff;
+padding:10px
 }
-
 .content{padding:15px}
-
 .tag{
-  display:inline-block;background:#4a00e0;
-  color:#fff;padding:4px 10px;
-  border-radius:6px;font-size:12px
+display:inline-block;
+background:#4a00e0;
+color:#fff;
+padding:4px 10px;
+border-radius:6px;
+font-size:12px;
+margin-bottom:6px
 }
-
-.price{
-  margin:10px 0
+.badge{
+position:absolute;
+top:12px;
+left:12px;
+background:#ff3d00;
+color:#fff;
+padding:6px 10px;
+font-size:12px;
+font-weight:bold;
+border-radius:6px
 }
-.old-price{
-  text-decoration:line-through;
-  color:#999;font-size:14px
-}
-.new-price{
-  color:#e63946;
-  font-size:20px;font-weight:bold
-}
-
-p{font-size:14px;color:#555;line-height:1.6}
-
+.price{margin:10px 0}
+.old-price{text-decoration:line-through;color:#999;font-size:14px}
+.new-price{font-size:20px;font-weight:bold;color:#e53935}
 .btn{
-  display:block;margin-top:12px;
-  background:#25d366;color:#fff;
-  padding:12px;border-radius:8px;
-  text-decoration:none;font-weight:bold;
-  text-align:center
+display:block;
+margin-top:15px;
+background:#25d366;
+color:#fff;
+padding:12px;
+border-radius:10px;
+text-align:center;
+text-decoration:none;
+font-weight:bold
 }
-
+details summary{
+cursor:pointer;
+font-weight:bold;
+margin-top:10px
+}
 footer{
-  background:#1f1f1f;color:#aaa;
-  text-align:center;padding:20px;font-size:14px
+background:#1f1f1f;
+color:#aaa;
+text-align:center;
+padding:20px;
+font-size:14px
 }
 </style>
 </head>
@@ -88,12 +106,12 @@ footer{
 <body>
 
 <header>
-  <h1>D-TECH</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#produk">Produk</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
+<h2>D-TECH</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#produk">Produk</a>
+<a href="#kontak">Kontak</a>
+</nav>
 </header>
 
 <div class="hero"></div>
@@ -105,22 +123,51 @@ footer{
 <div class="card">
 <span class="badge">PROMO</span>
 <img src="dtech-tvbox.png">
+
 <div class="content">
 <span class="tag">FULL HD</span>
 <h3>D-TECH BASIC FULL HD</h3>
 
 <div class="price">
-  <div class="old-price">Rp 650.000</div>
-  <div class="new-price">Rp 499.000</div>
+<div class="old-price">Rp 650.000</div>
+<div class="new-price">Rp 499.000</div>
 </div>
 
+<details>
+<summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-• RAM 4GB + ROM 64GB<br>
-• Android 14<br>
+<strong>Konfigurasi:</strong><br>
+• Memori 4GB + 64GB<br>
 • Resolusi 1080P Full HD<br>
-• TV lokal + YouTube + Film<br>
-• Garansi 3 bulan
+• Chipset Amlogic 905L2<br>
+• Android 14<br>
+• Proyeksi layar ponsel<br>
+• Garansi 3 bulan<br><br>
+
+<strong>Paket Pembelian:</strong><br>
+• Unit Android TV Box<br>
+• Kabel HDMI & RCA<br>
+• Power supply<br>
+• Remote control<br>
+• Buku manual<br><br>
+
+<strong>Keunggulan:</strong><br>
+• TV lokal, YouTube, film bioskop<br>
+• Decoding 1080p Full HD<br>
+• Support semua format video & audio<br>
+• WiFi 2.4G<br>
+• Mouse & keyboard USB / wireless<br><br>
+
+<strong>Koneksi Internet:</strong><br>
+• WiFi rumah<br>
+• Hotspot HP<br>
+• LAN kabel<br><br>
+
+<strong>Catatan:</strong><br>
+• Bluetooth tidak didukung<br>
+• Remote tanpa voice
 </p>
+</details>
 
 <a class="btn" href="https://wa.me/6285263841766" target="_blank">
 Order via WhatsApp
@@ -132,22 +179,54 @@ Order via WhatsApp
 <div class="card">
 <span class="badge">BEST SELLER</span>
 <img src="dtech-tvbox-2.png">
+
 <div class="content">
 <span class="tag">PRO 4K</span>
 <h3>D-TECH PRO 4K</h3>
 
 <div class="price">
-  <div class="old-price">Rp 1.150.000</div>
-  <div class="new-price">Rp 899.000</div>
+<div class="old-price">Rp 1.150.000</div>
+<div class="new-price">Rp 899.000</div>
 </div>
 
+<details>
+<summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-• RAM 4GB + ROM 128GB<br>
+<strong>Konfigurasi:</strong><br>
+• Memori 4GB + 128GB<br>
 • Resolusi 4K<br>
-• Bluetooth + Google Voice<br>
-• Karaoke & bola live<br>
-• Garansi 3 bulan
+• Chipset Amlogic 905L2<br>
+• Android 9<br>
+• Proyeksi layar ponsel<br>
+• Garansi 3 bulan<br><br>
+
+<strong>Paket Pembelian:</strong><br>
+• Unit Android TV Box<br>
+• Kabel HDMI & RCA<br>
+• Power supply<br>
+• Remote Google Voice<br>
+• Buku manual<br><br>
+
+<strong>Keunggulan:</strong><br>
+• TV lokal lengkap + YouTube<br>
+• Siaran bola live tanpa sensor<br>
+• Bluetooth karaoke<br>
+• Google Voice<br>
+• Decoding 1080p Full HD<br>
+• Support semua format<br>
+• WiFi 2.4G<br>
+• Mouse & keyboard USB / wireless<br><br>
+
+<strong>Koneksi Internet:</strong><br>
+• WiFi rumah<br>
+• Hotspot HP<br>
+• LAN kabel<br><br>
+
+<strong>Kompatibilitas:</strong><br>
+• TV LED, TV Tabung, Monitor<br>
+• Bluetooth 5.0
 </p>
+</details>
 
 <a class="btn" href="https://wa.me/6285263841766" target="_blank">
 Order via WhatsApp
@@ -157,17 +236,16 @@ Order via WhatsApp
 
 <!-- PRODUK 3 -->
 <div class="card">
-<span class="badge">READY</span>
 <img src="remote-dtech.png">
+
 <div class="content">
 <span class="tag">AKSESORIS</span>
-<h3>Remote & Adapter D-TECH</h3>
+<h3>Remote & Adapter</h3>
+<p>Remote pengganti dan adaptor original Android TV Box D-TECH.</p>
 
 <div class="price">
-  <div class="new-price">Mulai Rp 50.000</div>
+<div class="new-price">Mulai Rp 75.000</div>
 </div>
-
-<p>Remote pengganti & adaptor original Android TV Box D-TECH.</p>
 
 <a class="btn" href="https://wa.me/6285263841766" target="_blank">
 Order via WhatsApp

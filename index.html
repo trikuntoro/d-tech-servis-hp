@@ -4,9 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D-TECH | Android TV Box</title>
+
   <style>
-    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
-    body { margin: 0; background: #f4f6fb; }
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f6fb;
+    }
 
     /* HEADER */
     header {
@@ -17,14 +25,22 @@
       align-items: center;
       justify-content: space-between;
     }
-    header h1 { margin: 0; font-size: 26px; }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
     nav a {
       color: white;
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover { text-decoration: underline; }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
 
     /* HERO */
     .hero {
@@ -52,16 +68,21 @@
       border-radius: 14px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     .card img {
       width: 100%;
       height: 180px;
-      object-fit: cover;
+      object-fit: contain;
+      background: #fff;
+      padding: 10px;
     }
 
     .card .content {
       padding: 15px;
+      flex: 1;
     }
 
     .tag {
@@ -86,13 +107,14 @@
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 12px;
       background: #25d366;
       color: white;
       padding: 10px 14px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      text-align: center;
     }
 
     footer {
@@ -104,11 +126,18 @@
     }
 
     @media (max-width: 600px) {
-      header { flex-direction: column; gap: 10px; }
-      nav a { margin: 0 10px; }
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -122,36 +151,45 @@
 
 <div class="hero"></div>
 
-<div class="container">
+<div class="container" id="produk">
   <div class="grid">
 
+    <!-- PRODUK 1 -->
     <div class="card">
-      <img src="ChatGPT Image 19 Des 2025, 09.03.29.png" />
+      <img src="dtech-tvbox.png" alt="D-TECH Android TV Box">
       <div class="content">
         <span class="tag">Android TV Box</span>
         <h3>D-TECH RAM 4GB</h3>
         <p>Android TV Box D-TECH, cepat, stabil, cocok untuk YouTube, Netflix & IPTV.</p>
-        <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
+        <a class="btn" href="https://wa.me/6285263841766" target="_blank">
+          Order via WhatsApp
+        </a>
       </div>
     </div>
 
+    <!-- PRODUK 2 -->
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Smart+TV+Solution" />
+      <img src="dtech-tvbox-2.png" alt="D-TECH Android TV Box Full HD">
       <div class="content">
         <span class="tag">Smart TV</span>
         <h3>D-TECH Full HD</h3>
         <p>Ubah TV biasa jadi Smart TV, mendukung Play Store & remote learning.</p>
-        <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
+        <a class="btn" href="https://wa.me/6285263841766" target="_blank">
+          Order via WhatsApp
+        </a>
       </div>
     </div>
 
+    <!-- PRODUK 3 -->
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Aksesoris" />
+      <img src="remote-dtech.png" alt="Remote D-TECH">
       <div class="content">
         <span class="tag">Aksesoris</span>
         <h3>Remote & Adapter</h3>
         <p>Remote pengganti, adaptor original, dan aksesoris Android TV Box.</p>
-        <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
+        <a class="btn" href="https://wa.me/6285263841766" target="_blank">
+          Order via WhatsApp
+        </a>
       </div>
     </div>
 

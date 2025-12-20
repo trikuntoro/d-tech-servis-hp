@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>D-TECH | Android TV Box Murah Full HD & 4K</title>
 
 <!-- SEO -->
@@ -121,28 +122,19 @@ font-weight:bold;
 font-size:16px
 }
 
-<!-- GALERI -->
-<div class="container galeri" id="galeri">
-<h2>Galeri Pembeli</h2>
-
-<div class="galeri-grid">
-  <img src="galeri1.jpeg" 
-       alt="Pembeli Android TV Box D-TECH Full HD" 
-       loading="lazy">
-
-  <img src="galeri2.jpeg" 
-       alt="Pengiriman Android TV Box D-TECH ke pelanggan" 
-       loading="lazy">
-
-  <img src="galeri3.jpeg" 
-       alt="Testimoni pembeli D-TECH PRO 4K" 
-       loading="lazy">
-
-  <img src="galeri4.jpeg" 
-       alt="Pemasangan Android TV Box D-TECH di rumah pembeli" 
-       loading="lazy">
-</div>
-</div>
+/* GALERI */
+.galeri h2{text-align:center}
+.galeri-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px
+}
+.galeri-grid img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:12px
+}
 
 /* DESKTOP */
 @media(min-width:768px){
@@ -176,13 +168,14 @@ font-size:14px
 
 <div class="hero"></div>
 
+<!-- PRODUK -->
 <div class="container" id="produk">
 <div class="grid">
 
 <!-- PRODUK 1 -->
 <div class="card">
 <span class="badge">PROMO</span>
-<img src="dtech-tvbox.png">
+<img src="dtech-tvbox.png" alt="D-TECH BASIC FULL HD">
 <div class="content">
 <span class="tag">FULL HD</span>
 <h3>D-TECH BASIC FULL HD</h3>
@@ -195,23 +188,11 @@ font-size:14px
 <details>
 <summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-<strong>Konfigurasi:</strong><br>
 • RAM 4GB + ROM 64GB<br>
-• Resolusi 1080P Full HD<br>
 • Android 14<br>
-• Chipset Amlogic 905L2<br>
-• Proyeksi layar HP<br>
-• Garansi 3 bulan<br><br>
-
-<strong>Paket:</strong><br>
-• Unit TV Box<br>
-• Kabel HDMI & RCA<br>
-• Power supply<br>
-• Remote control<br>
-• Buku manual<br><br>
-
-<strong>Catatan:</strong><br>
-Bluetooth & Google Voice tidak didukung
+• Resolusi Full HD 1080P<br>
+• Support TV tabung & LED<br>
+• Garansi 3 bulan
 </p>
 </details>
 
@@ -222,7 +203,7 @@ Bluetooth & Google Voice tidak didukung
 <!-- PRODUK 2 -->
 <div class="card">
 <span class="badge">BEST SELLER</span>
-<img src="dtech-tvbox-2.png">
+<img src="dtech-tvbox-2.png" alt="D-TECH PRO 4K">
 <div class="content">
 <span class="tag">PRO 4K</span>
 <h3>D-TECH PRO 4K</h3>
@@ -235,39 +216,12 @@ Bluetooth & Google Voice tidak didukung
 <details>
 <summary>Lihat Spesifikasi Lengkap</summary>
 <p>
-<strong>Konfigurasi:</strong><br>
 • RAM 4GB + ROM 128GB<br>
 • Resolusi 4K Ultra HD<br>
 • Android 9<br>
-• Chipset Amlogic 905L2<br>
-• Proyeksi layar HP<br>
-• Garansi 3 bulan<br><br>
-
-<strong>Keunggulan:</strong><br>
-• TV lokal, YouTube, film bioskop<br>
-• Bola live tanpa sensor<br>
 • Bluetooth & Google Voice
 </p>
 </details>
-
-<a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
-</div>
-</div>
-
-<!-- PRODUK 3 AKSESORIS -->
-<div class="card">
-<span class="badge">AKSESORIS</span>
-<img src="remote-dtech.png">
-<div class="content">
-<span class="tag">AKSESORIS</span>
-<h3>Remote & Adapter D-TECH</h3>
-
-<p style="font-size:14px;line-height:1.7">
-• Remote pengganti Android TV Box D-TECH<br>
-• Adapter / power supply original<br>
-• Cocok untuk semua seri D-TECH<br>
-• Siap pakai, plug & play
-</p>
 
 <a class="btn" href="https://wa.me/6285263841766">Order via WhatsApp</a>
 </div>
@@ -279,11 +233,12 @@ Bluetooth & Google Voice tidak didukung
 <!-- GALERI -->
 <div class="container galeri" id="galeri">
 <h2>Galeri Pembeli</h2>
+
 <div class="galeri-grid">
-<img src="galeri1.jpg">
-<img src="galeri2.jpg">
-<img src="galeri3.jpg">
-<img src="galeri4.jpg">
+<img src="galeri1.jpeg" alt="Pembeli Android TV Box D-TECH" loading="lazy">
+<img src="galeri2.jpeg" alt="Pengiriman Android TV Box D-TECH" loading="lazy">
+<img src="galeri3.jpeg" alt="Testimoni pembeli D-TECH" loading="lazy">
+<img src="galeri4.jpeg" alt="Pemasangan Android TV Box D-TECH" loading="lazy">
 </div>
 </div>
 
